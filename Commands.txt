@@ -1,0 +1,7 @@
+1. dotnet --version
+2. dotnet new webapi -n PlatformService
+3. dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+4. dotnet add package Microsoft.EntityFrameworkCore
+5. dotnet add package Microsoft.EntityFrameworkCore.Design
+6. dotnet add package Microsoft.EntityFrameworkCore.InMemory
+7. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
