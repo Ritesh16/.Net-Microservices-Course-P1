@@ -5,3 +5,5 @@
 5. dotnet add package Microsoft.EntityFrameworkCore.Design
 6. dotnet add package Microsoft.EntityFrameworkCore.InMemory
 7. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+8. dotnet build
