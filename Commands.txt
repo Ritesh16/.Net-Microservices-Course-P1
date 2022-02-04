@@ -7,3 +7,13 @@
 7. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 
 8. dotnet build
+
+Docker
+1. docker --version
+2. docker build -t riteshsharma16/platformservice .    // build image
+3. docker run -p 8080:80 -d riteshsharma16/platformservice   // run the image as new container
+4. docker ps // show running container
+5. docker stop <containerid>  // stop the container
+6. docker start <containerid>   // restart existing container
+7. docker login // do it first before docker push
+8. docker push riteshsharma16/platformservice
