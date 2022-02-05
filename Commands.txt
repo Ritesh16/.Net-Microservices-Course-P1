@@ -17,3 +17,27 @@ Docker
 6. docker start <containerid>   // restart existing container
 7. docker login // do it first before docker push
 8. docker push riteshsharma16/platformservice
+
+
+Visual code
+1. Directory listing
+dir 
+2. Open code
+code -r <>>foldername>
+
+
+Kubernetes
+1. version
+kubectl version
+
+2. Create deployment file & do deployment
+kubectl apply -f platforms.depl.yaml
+
+3. See deployment files
+kubectl get deployments
+
+4. See pods
+kubectl get pods
+
+5. See pods
+kubectl delete deployment <name of deployment>
