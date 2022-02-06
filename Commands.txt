@@ -42,3 +42,6 @@ kubectl get pods
 
 5. See pods
 kubectl delete deployment <name of deployment>
+
+6. Fetch latest image from kubernetes
+kubectl rollout restart deployment platforms-depl
