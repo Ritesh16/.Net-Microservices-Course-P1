@@ -34,6 +34,9 @@ kubectl version
 2. Create deployment file & do deployment
 kubectl apply -f platforms.depl.yaml
 
+opposite of apply is Delete
+kubectl delete -f platforms.depl.yaml
+
 3. See deployment files
 kubectl get deployments
 
@@ -45,3 +48,24 @@ kubectl delete deployment <name of deployment>
 
 6. Fetch latest image from kubernetes
 kubectl rollout restart deployment platforms-depl
+
+7. It works with namespaces. To see namespaces check following command
+kubectl get namespace
+
+8. To see what pod is associated with what namespace use following (creating load balancer)
+kubectl get pods --namespace=ingress-nginx
+
+9. To check load balancer for services
+kubectl get services --namespace=ingress-nginx
+
+10. To check storage class()
+kubectl get storageclass
+
+11. Create secret for config. in our case it is sql server login
+kubectl create secret generic mssql --from-literal=SA_PASSWORD="pa55w0rd!"
+
+12. To see error in pod
+kubectl describe pod podname 
+
+13. Delete secret
+kubectl delete secret mssql // mssql is name of secret
