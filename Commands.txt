@@ -43,7 +43,7 @@ kubectl get deployments
 4. See pods
 kubectl get pods
 
-5. See pods
+5. Delete Deployments
 kubectl delete deployment <name of deployment>
 
 6. Fetch latest image from kubernetes
