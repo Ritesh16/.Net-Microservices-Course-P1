@@ -6,8 +6,9 @@
 5. dotnet add package Microsoft.EntityFrameworkCore.Design
 6. dotnet add package Microsoft.EntityFrameworkCore.InMemory
 7. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+8. dotnet add package RabbitMQ.Client
+9. dotnet build
 
-8. dotnet build
 
 Docker
 1. docker --version

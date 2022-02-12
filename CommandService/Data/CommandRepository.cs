@@ -16,7 +16,7 @@ namespace CommandService.Data
         }
         public void CreateCommand(int platformId, Command command)
         {
-            if(command == null)
+            if (command == null)
             {
                 throw new ArgumentNullException(nameof(command));
             }
@@ -27,12 +27,17 @@ namespace CommandService.Data
 
         public void CreatePlatform(Platform platform)
         {
-            if(platform == null)
+            if (platform == null)
             {
                 throw new ArgumentNullException(nameof(platform));
             }
 
             context.Platforms.Add(platform);
+        }
+
+        public bool ExternalPlatformExists(int externalPlatformId)
+        {
+            return context.Platforms.Any(x => x.ExternalId == externalPlatformId);
         }
 
         public IEnumerable<Platform> GetAllPlatforms()
@@ -61,7 +66,7 @@ namespace CommandService.Data
 
         public bool SaveChanges()
         {
-            return context.SaveChanges() >= 0; 
+            return context.SaveChanges() >= 0;
         }
     }
 }
