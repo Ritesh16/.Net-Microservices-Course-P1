@@ -28,6 +28,7 @@ namespace CommandService.EventProcessing
             {
                 case EventType.PlatformPublished:
                     // To Do
+                    AddPlatform(message);
                     break;
                 default:
                     Console.WriteLine("-->");
