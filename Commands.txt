@@ -8,6 +8,10 @@
 7. dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 8. dotnet add package RabbitMQ.Client
 9. dotnet build
+10. dotnet add package Grpc.AspNetCore // server
+11. dotnet add package Grpc.Tools      // Client
+12. dotnet add package Grpc.Net.Client // Client
+13. dotnet add package Google.Protobuf // Client
 
 
 Docker
